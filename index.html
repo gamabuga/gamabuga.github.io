@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="styles.css">
 
     <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.gstatic.com          
+                           http://*.googleapis.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                           127.0.0.1
+                           http://*.gstatic.com         
+                           http://*.googleapis.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+    ">
 </head>
 
 <body>
@@ -122,6 +138,7 @@
     <h1>FOOTER AREA</h1>
   </div>
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="./scripts.js"></script>
+    <script src="./app.js" type="module"></script>
 </body>
 </html>
